@@ -1,0 +1,91 @@
+{
+  "name": "utmolestiae",
+  "version": "1.0.0",
+  "main": "./dist/vue-trix.umd.js",
+  "files": [
+    "example/*",
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
+  "homepage": "https://github.com/JoyceGoldner/utmolestiae.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoyceGoldner/utmolestiae.git"
+  },
+  "author": "ArnoldoDach",
+  "license": "MIT",
+  "keywords": [
+    "aut",
+    "trix",
+    "text editor",
+    "quas",
+    "enim",
+    "javascript"
+  ],
+  "dependencies": {
+    "trix": "^0.12.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "vue": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
